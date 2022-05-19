@@ -1,12 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <div class="container">
+    <HeaderItem/>
+    <NewTask/>
+  </div>
 </template>
 
 <script>
+import HeaderItem from './components/HeaderItem'
+import NewTask from './components/NewTask.vue'
 
 export default {
   name: 'App',
   components: {
+    HeaderItem, NewTask
   }
 }
 </script>
