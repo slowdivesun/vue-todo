@@ -32,7 +32,7 @@ export default {
       e.preventDefault();
       this.userPresent = true;
       this.username = this.input;
-      console.log(this.username)
+      localStorage.setItem("tasks", JSON.stringify(this.tasks));
     },
     onChange(e){
       this.input = e.target.value
